@@ -1,0 +1,67 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/top_bar_1"
+        android:layout_width="match_parent"
+        android:background="@color/topbar_bg_color"
+        android:layout_height="@dimen/topbar_height">
+
+        <ImageView
+            android:id="@+id/left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:paddingLeft="17dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/left_menu_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/notice_red_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/em_unread_count_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <com.vcspark.lotto.ui.widget.SlidingTabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:margin="15dp"
+            app:scaleText="true"
+            app:scaleTextSize="18"
+            app:textSize="16" />
+
+        <ImageView
+            android:id="@+id/icon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_title"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:paddingLeft="15dp"
+            android:paddingRight="17dp"
+            android:src="@drawable/search_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/top_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c9c9c9" />
+</merge>

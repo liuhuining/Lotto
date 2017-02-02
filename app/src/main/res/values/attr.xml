@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="margin" format="dimension" />
+        <attr name="scaleText" format="boolean" />
+        <attr name="textSize" format="integer" />
+        <attr name="scaleTextSize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="StatuBarView">
+    <attr name="statu" format="integer" />
+    <attr name="progressColor" format="string" />
+    <attr name="defaultProgressColor" format="string" />
+    </declare-styleable>
+</resources>

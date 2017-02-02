@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/project_pic"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:background="@drawable/project_list_default_pic"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="8dp"
+                android:text="项目名称"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/like_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:padding="8dp"
+                android:src="@drawable/had_liked_1" />
+
+            <TextView
+                android:id="@+id/update_button"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/login_btn_selector"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="更新"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <com.vcspark.lotto.ui.widget.StatuBarView
+            android:id="@+id/project_status"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            app:defaultProgressColor="#dfdfdf"
+            app:progressColor="#ff7300"
+            app:statu="0" />
+
+        <LinearLayout
+            android:id="@+id/project_progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.vcspark.lotto.ui.widget.ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="众筹中"
+                android:textColor="@color/login_button_default_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="visible">
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingTop="8dp"
+                android:rating="1.5" />
+
+            <ImageView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                android:src="@drawable/question_icon" />
+
+            <TextView
+                android:id="@+id/ratingbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="展示失败"
+                android:textColor="@color/login_button_default_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fail_status"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/login_button_default_color"
+            android:gravity="center"
+            android:text="持续关注"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <include layout="@layout/project_progress" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <ImageView
+        android:id="@+id/notice_line"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/project_list_notice_line"
+        android:visibility="gone" />
+</LinearLayout>

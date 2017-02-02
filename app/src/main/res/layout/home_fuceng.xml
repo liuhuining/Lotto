@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:src="@drawable/topbar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="活动公告"
+            android:textColor="@color/login_button_default_color"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/fuceng_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4c000000">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#f0eff5"
+            android:divider="@null"
+            android:dividerHeight="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/listview"
+            android:background="@drawable/notice_bottom_float" />
+    </RelativeLayout>
+</LinearLayout>

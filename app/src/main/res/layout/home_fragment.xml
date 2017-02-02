@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0eff5"
+        android:fadingEdge="none" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88131313"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/industry_filter_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:dividerHeight="0.5dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/sort_filter_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:dividerHeight="0.5dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/condition_filter_layout" />
+</RelativeLayout>

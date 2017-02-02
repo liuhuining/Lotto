@@ -1,0 +1,183 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/project_description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="746">
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥12,3330"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_1" />
+
+            <TextView
+                android:id="@+id/bottom_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标（元）"
+                android:textColor="@color/text_color_999999"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="256"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥12,333"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_1" />
+
+            <TextView
+                android:id="@+id/bottom_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约（元）"
+                android:textColor="@color/text_color_999999"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/remain_time_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="190"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:paddingTop="5dp"
+                app:isHideTimeBackground="true"
+                app:isShowDay="false"
+                app:isShowHour="true"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isShowTimeBgDivisionLine="false"
+                app:suffixGravity="center"
+                app:suffixTextColor="@color/login_button_default_color"
+                app:suffixTextSize="15sp"
+                app:timeBgColor="@color/transparent"
+                app:timeBgRadius="5dp"
+                app:timeTextColor="@color/login_button_default_color"
+                app:timeTextSize="@dimen/text_size_1" />
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间"
+                android:textColor="@color/text_color_999999"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="190"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/top_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_1" />
+
+            <TextView
+                android:id="@+id/bottom_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户评论"
+                android:textColor="@color/text_color_999999"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_1" />
+
+            <TextView
+                android:id="@+id/bottom_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户评论"
+                android:textColor="@color/text_color_999999"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>
